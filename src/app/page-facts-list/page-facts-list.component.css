@@ -1,0 +1,11 @@
+.fact-list-form{
+  display: flex;
+  align-content: stretch;
+  vertical-align: center;
+}
+
+.facts-form-button{
+min-width: 140px;
+  margin: 0 4px;
+  height: revert;
+}

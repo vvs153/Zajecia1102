@@ -1,0 +1,50 @@
+<mat-card>
+  <mat-card-title>Cat fact: {{factDetails._id}}</mat-card-title>
+  <mat-card-subtitle>Fact: {{factDetails.text}}</mat-card-subtitle>
+  <mat-card-content>
+
+    <div class="m-5">
+      <img src="{{factDetails.user.photo}}">
+    </div>
+    <mat-form-field class="w-50" appearance="outline">
+      <mat-label>First name</mat-label>
+      <input matInput #input placeholder="First Name:" [(ngModel)]="factDetails.user.name.first">
+    </mat-form-field>
+
+    <mat-form-field class="w-50" appearance="outline">
+      <mat-label>Last name</mat-label>
+      <input matInput #input placeholder="Last Name:" [(ngModel)]="factDetails.user.name.last">
+    </mat-form-field>
+    <mat-form-field class="w-100" appearance="outline">
+      <mat-label>Identifier</mat-label>
+      <input matInput #input placeholder="Fact id" [(ngModel)]="factDetails._id">
+    </mat-form-field>
+
+    <mat-form-field class="w-100" appearance="outline">
+      <mat-label>Created</mat-label>
+      <input matInput #input placeholder="Created:" [(ngModel)]="factDetails.createdAt">
+    </mat-form-field>
+
+    <mat-form-field class="w-100" appearance="outline">
+      <mat-label>Updated</mat-label>
+      <input matInput #input placeholder="Updated:" [(ngModel)]="factDetails.updatedAt">
+    </mat-form-field>
+
+    <mat-form-field class="w-100" appearance="outline">
+      <mat-label>Type</mat-label>
+      <input matInput #input placeholder="Type:" [(ngModel)]="factDetails.type">
+    </mat-form-field>
+
+    <mat-form-field class="w-100" appearance="outline">
+      <mat-label>Status sent count:</mat-label>
+      <input matInput #input placeholder="Status sent count:" [(ngModel)]="factDetails.status.sentCount">
+    </mat-form-field>
+
+
+    <mat-form-field class="w-100" appearance="outline">
+      <mat-label>Deleted</mat-label>
+      <input matInput #input placeholder="Deleted:" [(ngModel)]="factDetails.deleted">
+    </mat-form-field>
+
+  </mat-card-content>
+</mat-card>

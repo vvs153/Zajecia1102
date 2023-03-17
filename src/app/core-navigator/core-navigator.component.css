@@ -1,0 +1,17 @@
+.nav-logo{
+height: 3.5rem;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.navbar-dark {
+  background-color: var(--dark-cream) !important;
+}
+.nav-link-dark{
+  color: #252323 !important;
+}
+.nav-link-dark:hover{
+  background-color: var(--dark-cream) !important;
+}
+.dropdown-menu{
+  min-width: 200px !important;
+}
